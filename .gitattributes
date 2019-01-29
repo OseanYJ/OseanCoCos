@@ -1,0 +1,46 @@
+# 任何文件，设置text=auto，表示文件的行尾自动转换。如果是文本文件，则在文件入Git库时，行尾自动转换为LF。
+# 如果已经在入Git库中的文件的行尾为CRLF，则该文件在入Git库时，不再转换为LF。
+* text=auto
+
+
+# crlf => lf
+*.css           text
+*.df            text
+*.htm           text
+*.html          text
+*.java          text eol=lf
+*.js            text
+*.json          text
+*.jsp           text
+*.jspf          text
+*.jspx          text
+*.properties    text
+*.pro           text
+*.sh            text eol=lf
+*.tld           text
+*.txt           text
+*.tag           text
+*.tagx          text
+*.xml           text
+*.yml           text
+*.sql 			text
+*.gradle 		text
+*.gitignore     text
+
+# 二进制文件
+*.jpg           binary
+*.jpeg          binary
+*.png           binary
+*.so            binary
+*.class         binary
+*.dll           binary
+*.ear           binary
+*.gif           binary
+*.ico           binary
+*.jar           binary
+*.aar           binary
+*.war           binary
+*.cer           binary
+
+# bat类型的文件用crlf换行符
+*.bat           text eol=crlf
