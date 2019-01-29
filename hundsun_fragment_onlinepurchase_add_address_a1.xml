@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/HundsunStyleWmHw"
+    android:background="@android:color/white"
+    android:orientation="vertical"
+    android:paddingTop="8dp">
+
+    <com.hundsun.bridge.view.cardview.ShadowCardView
+        style="@style/HundsunStyleWmHw"
+        app:radius="@dimen/hundsun_dimen_shadow_corners"
+        app:shadowColor="@color/hundsun_color_shadow_gray">
+
+        <LinearLayout
+            style="@style/HundsunStyleWmHw"
+            android:orientation="vertical">
+
+
+            <RadioGroup
+                android:id="@+id/radioGroup"
+                android:layout_width="match_parent"
+                android:layout_height="36dp"
+                android:background="@drawable/hundsun_shape_top_corner"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/deliveryRB"
+                    style="@style/TabRadioStyle"
+                    android:checked="true"
+                    android:text="物流配送" />
+
+                <RadioButton
+                    android:id="@+id/selfTakeRB"
+                    style="@style/TabRadioStyle"
+                    android:text="到店自取" />
+            </RadioGroup>
+
+            <include
+                android:id="@+id/addAddrLayout"
+                layout="@layout/hundsun_include_onlinepurchase_add_address" />
+
+            <include
+                android:id="@+id/takeDrugLayout"
+                layout="@layout/hundsun_include_onlinepurchase_take_drug_location" />
+        </LinearLayout>
+    </com.hundsun.bridge.view.cardview.ShadowCardView>
+
+    <TextView
+        android:id="@+id/promptTV"
+        style="@style/HundsunStyleWmHw"
+        android:layout_marginLeft="@dimen/hundsun_dimen_small_spacing"
+        android:layout_marginTop="@dimen/hundsun_dimen_middle_spacing"
+        android:layout_marginRight="@dimen/hundsun_dimen_small_spacing"
+        android:textColor="@color/hundsun_color_doc_cons_bg"
+        android:textSize="@dimen/hundsun_dimen_wee_text"
+        android:visibility="gone" />
+
+    <com.hundsun.bridge.view.cardview.ShadowCardView
+        android:id="@+id/idcardNumLayout"
+        style="@style/HundsunStyleWmHw"
+        android:layout_marginTop="@dimen/hundsun_dimen_middle_spacing"
+        android:background="@android:color/white"
+        android:minHeight="44dp"
+        android:visibility="gone"
+        app:radius="@dimen/hundsun_dimen_shadow_corners"
+        app:shadowColor="@color/hundsun_color_shadow_gray">
+
+        <LinearLayout
+            style="@style/HundsunStyleWmHw"
+            android:layout_gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/hundsun_dimen_middle_spacing"
+            android:paddingRight="@dimen/hundsun_dimen_middle_spacing">
+
+            <TextView
+                style="@style/HundsunStyleWwHw"
+                android:text="@string/hundsun_common_idcard_hint"
+                android:textStyle="bold"
+                android:textColor="@color/hundsun_app_color_87_black"
+                android:textSize="@dimen/hundsun_dimen_small_text" />
+
+            <TextView
+                android:id="@+id/idcardNumTV"
+                style="@style/HundsunStyleWmHw"
+                android:layout_marginLeft="@dimen/hundsun_dimen_middle_spacing"
+                android:textStyle="bold"
+                android:drawableRight="@drawable/hundsun_purchase_edit_icon"
+                android:textColor="@color/hundsun_app_color_87_black"
+                android:textSize="@dimen/hundsun_dimen_small_text" />
+        </LinearLayout>
+    </com.hundsun.bridge.view.cardview.ShadowCardView>
+</LinearLayout>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white"
+    android:paddingBottom="@dimen/hundsun_onlinepurchase_order_prompt_height"
+    android:orientation="vertical">
+    <!--优惠券-->
+    <FrameLayout
+        android:id="@+id/couponFramelayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <com.hundsun.bridge.view.cardview.ShadowCardView
+        style="@style/HundsunStyleWmHw"
+        android:layout_marginTop="@dimen/hundsun_dimen_small_spacing"
+        app:radius="@dimen/hundsun_dimen_shadow_corners"
+        app:shadowColor="@color/hundsun_color_shadow_gray">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/hundsun_onlinepurchase_order_item_height"
+            android:background="@android:color/white">
+
+            <com.hundsun.bridge.view.DrawableCenterTextView
+                android:id="@+id/contactServiceTV"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:drawableLeft="@drawable/hundsun_online_purchase_contact_service"
+                android:drawablePadding="@dimen/hundsun_dimen_small_spacing"
+                android:gravity="center"
+                android:text="@string/hundsun_prescription_contract_service"
+                android:textColor="@color/hundsun_color_text_green_common"
+                android:textSize="@dimen/hundsun_dimen_small_text" />
+
+            <View
+                android:id="@+id/dividerLine"
+                android:layout_width="@dimen/hundsun_dimen_normal_divide"
+                android:layout_height="@dimen/hundsun_dimen_big_spacing"
+                android:layout_gravity="center_vertical"
+                android:background="@color/hundsun_app_color_divide"
+                android:visibility="gone" />
+
+            <com.hundsun.bridge.view.DrawableCenterTextView
+                android:id="@+id/checkPurchaseTV"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:drawableLeft="@drawable/hundsun_online_purchase_contact_prescription"
+                android:drawablePadding="@dimen/hundsun_dimen_small_spacing"
+                android:gravity="center"
+                android:text="@string/hundsun_onlinepurchase_contact_prescription"
+                android:textColor="@color/hundsun_color_text_green_common"
+                android:textSize="@dimen/hundsun_dimen_small_text"
+                android:visibility="gone" />
+        </LinearLayout>
+    </com.hundsun.bridge.view.cardview.ShadowCardView>
+
+</LinearLayout>

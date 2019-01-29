@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/HundsunStyleWmHw"
+    android:orientation="vertical"
+    android:background="@android:color/white" >
+
+    <include layout="@layout/hundsun_include_divide_horizontal_deeper" />
+    <LinearLayout
+        style="@style/HundsunStyleWmHw"
+        android:paddingTop="@dimen/hundsun_dimen_small_spacing"
+        android:paddingBottom="@dimen/hundsun_dimen_small_spacing"
+        android:paddingLeft="@dimen/hundsun_dimen_large_spacing"
+        android:paddingRight="@dimen/hundsun_dimen_large_spacing"
+        android:gravity="center_vertical" >
+
+        <!-- 网上购药 -->
+        <com.hundsun.base.view.RoundCornerButton
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/prescriptionBtnShop"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:contentPaddingTop="@dimen/hundsun_dimen_small_spacing"
+            app:contentPaddingBottom="@dimen/hundsun_dimen_small_spacing"
+            app:titleColor="@android:color/white"
+            app:titleSize="@dimen/hundsun_dimen_large_text"
+            app:titleDrawableLeft="@drawable/hundsun_prescription_shop"
+            app:titleDrawablePadding="@dimen/hundsun_dimen_small_spacing"
+            app:btnNormalColor="@color/hundsun_app_color_primary"
+            app:btnPressedColor="@color/hundsun_app_color_primary_dark"
+            app:btnDisEnableColor="@color/hundsun_app_color_btn_disabled"
+            app:btnCornerRadius="@dimen/hundsun_dimen_large_corners"
+            app:btnElevation="@dimen/hundsun_dimen_no_spacing" />
+
+        <!-- 医院取药 -->
+        <com.hundsun.base.view.RoundCornerButton
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/prescriptionBtnHos"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:contentPaddingTop="@dimen/hundsun_dimen_small_spacing"
+            app:contentPaddingBottom="@dimen/hundsun_dimen_small_spacing"
+            app:titleColor="@android:color/white"
+            app:titleSize="@dimen/hundsun_dimen_large_text"
+            app:titleDrawableLeft="@drawable/hundsun_prescription_hospital"
+            app:titleDrawablePadding="@dimen/hundsun_dimen_small_spacing"
+            app:btnNormalColor="@color/hundsun_app_color_primary"
+            app:btnPressedColor="@color/hundsun_app_color_primary_dark"
+            app:btnDisEnableColor="@color/hundsun_app_color_btn_disabled"
+            app:btnCornerRadius="@dimen/hundsun_dimen_large_corners"
+            app:btnElevation="@dimen/hundsun_dimen_no_spacing"
+            android:layout_marginLeft="@dimen/hundsun_dimen_large_spacing" />
+    </LinearLayout>
+
+</LinearLayout>
+
