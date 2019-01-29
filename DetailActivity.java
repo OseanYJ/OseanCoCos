@@ -71,7 +71,7 @@ import java.util.List;
  * @Author:
  * @Date: </ModifyLog>
  */
-public class OnlinePurchaseDetailActivity extends HundsunBridgeActivity implements IHttpRequestListener<OnlinePurchaseRecordDetailRes>, View.OnClickListener {
+public class DetailActivity extends HundsunBridgeActivity implements IHttpRequestListener<OnlinePurchaseRecordDetailRes>, View.OnClickListener {
     @InjectView
     private Toolbar hundsunToolBar;
     @InjectView
